@@ -1,0 +1,18 @@
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header p{
+    display: flex;
+    gap: 15px;
+    margin-left: 50%;
+}
+.perfil{
+    background-color: rgb(216, 235, 252);
+    border-radius: 50px;
+}

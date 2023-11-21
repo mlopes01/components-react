@@ -1,0 +1,12 @@
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    height: 20%;
+}
+footer div{
+    display: flex;
+    align-items: center;
+}
