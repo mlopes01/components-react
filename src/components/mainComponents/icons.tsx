@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ReactNode } from 'react'
 
 import { HTMLAttributes } from 'react';
 
-import * as React from "react";
+
 
 
 interface spanProps extends HTMLAttributes<HTMLSpanElement> {
@@ -30,9 +30,9 @@ export function Likesprop() {
         setLike(likes + 1)
     }
 
-    const tempoEspera = 1000
-    React.useEffect(() => {
-        const tempoSaida = setTimeout(setChangeIcon, tempoEspera)
+
+    useEffect(() => {
+        const tempoSaida = setTimeout(setChangeIcon, 1000)
         return () => clearTimeout(tempoSaida)
     }, [changeIcon])
 
